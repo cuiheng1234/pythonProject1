@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from tensorboardX import SummaryWriter
 
+## 来个小小的修改
 class Net1(nn.Module):
     def __init__(self):
         super(Net1, self).__init__()
