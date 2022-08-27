@@ -50,16 +50,16 @@ pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.
 CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --log_dor <log_dir> --learning_rate 0.02 --dim 768 --heads 12 --dataset <specify_dataset>
 ```
 
-## 3.Test
+## 4.Test
 ```
 CUDA_VISIBLE_DEVICES=<gpu_device> python test_classification.py --model pct --log_dor <log_dir>  --dim 768 --heads 12 --dataset <specify_dataset>
 ```
-## 4.Pre_training
+## 5.Pre_training
 ```
 CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --log_dor <log_dir> --learning_rate 0.02 --dim 768 --heads 12 --dataset shapenetcorev2
 ```
 
-## 5.Fine_tuning
+## 6.Fine_tuning
 ```
 CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --log_dor <log_dir> --learning_rate 0.02 --dim 768 --heads 12 --dataset <specify_dataset>
 ```
