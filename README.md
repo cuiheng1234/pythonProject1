@@ -61,5 +61,5 @@ CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --l
 
 ## 6.Fine_tuning
 ```
-CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --log_dor <log_dir> --learning_rate 0.02 --dim 768 --heads 12 --dataset <specify_dataset>
+CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --use_pretrin --log_dor <log_dir> --learning_rate 0.02 --dim 768 --heads 12 --dataset <specify_dataset>
 ```
