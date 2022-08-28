@@ -63,3 +63,12 @@ CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --l
 ```
 CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --use_pretrin --log_dor <log_dir> --learning_rate 0.02 --dim 768 --heads 12 --dataset <specify_dataset>
 ```
+## 7.Robustness test
+指定需要何种鲁棒性测试，例如添加高斯噪声需要在下面命令中添加--guass_norse参数，默认sigma=0.01。
+```
+UDA_VISIBLE_DEVICES=<gpu_device> python test_classification.py --model pct --guass_norse --log_dor <log_dir>  --dim 768 --heads 12 --dataset <specify_dataset>
+```
+在作丢失点的实验时，需要添加使用点的个数例如  --num_points 768
+```
+UDA_VISIBLE_DEVICES=<gpu_device> python test_classification.py --model pct --num_points768 --log_dor <log_dir>  --dim 768 --heads 12 --dataset <specify_dataset>
+```
