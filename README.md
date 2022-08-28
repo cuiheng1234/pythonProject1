@@ -73,4 +73,4 @@ UDA_VISIBLE_DEVICES=<gpu_device> python test_classification.py --model pct --gua
 UDA_VISIBLE_DEVICES=<gpu_device> python test_classification.py --model pct --num_points768 --log_dor <log_dir>  --dim 768 --heads 12 --dataset <specify_dataset>
 ```
 
-最后我们还提供在较大数据集ShapeNetCore v2数据集上预训练模型。[ShapeNetCore_v2_pre_train]()
+## 最后我们还提供在较大数据集ShapeNetCore v2数据集上预训练模型。[ShapeNetCore_v2_pre_train]()
