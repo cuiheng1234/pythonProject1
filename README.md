@@ -74,3 +74,4 @@ UDA_VISIBLE_DEVICES=<gpu_device> python test_classification.py --model pct --num
 ```
 
 ## 最后我们还提供在较大数据集ShapeNetCore v2数据集上预训练模型。[ShapeNetCore_v2_pre_train]()
+注意：在进行微调时，不要添加--use_normals参数。
