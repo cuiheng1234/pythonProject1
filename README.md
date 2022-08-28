@@ -28,15 +28,11 @@ pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.
 
 官网下载：[ModelNet40](https://modelnet.cs.princeton.edu/#)
 
-百度网盘：[链接](https://pan.baidu.com/s/1TF7vgUGOih5aOL3Tjhrc9A )
-提取码：a0ev
 
 2）ScanObjectNN数据集下载：
 
 官网下载：[ScanObjectNN](https://hkust-vgd.github.io/scanobjectnn/)
 
-百度网盘：[链接](https://pan.baidu.com/s/1WNtUL7s4m_bi6zHl7c7exg)
-提取码：y62f
 
 3）ShapeNetCore v2数据集下载
 
@@ -56,7 +52,7 @@ CUDA_VISIBLE_DEVICES=<gpu_device> python test_classification.py --model pct --lo
 ```
 ## 5.Pre_training
 ```
-CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --log_dor <log_dir> --learning_rate 0.02 --dim 768 --heads 12 --dataset shapenetcorev2
+CUDA_VISIBLE_DEVICES=<gpu_device> python train_classification.py --model pct --log_dor <log_dir>  --dim 768 --heads 12 --dataset shapenetcorev2
 ```
 
 ## 6.Fine_tuning
@@ -73,5 +69,5 @@ UDA_VISIBLE_DEVICES=<gpu_device> python test_classification.py --model pct --gua
 UDA_VISIBLE_DEVICES=<gpu_device> python test_classification.py --model pct --num_points768 --log_dor <log_dir>  --dim 768 --heads 12 --dataset <specify_dataset>
 ```
 
-## 最后我们还提供在较大数据集ShapeNetCore v2数据集上预训练模型。[ShapeNetCore_v2_pre_train]()
+## 最后我们还提供在较大数据集ShapeNetCore v2数据集上预训练模型。[ShapeNetCore_v2_pre_train](https://pan.baidu.com/s/1IiApcvwfW5oeFydjFIMjxA )提取码：rvga
 注意：在进行微调时，不要添加--use_normals参数。
