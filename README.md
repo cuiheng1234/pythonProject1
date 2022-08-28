@@ -14,11 +14,11 @@ pip install -r requirements.txt
 
 还需要安装必要的工具库
 ```
-pip install pointnet2_ops_lib
+pip install pointnet2_ops_lib  # 该库提供furthest_point_sample和gather_option函数
 ```
 
 ```
-pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.2/KNN_CUDA-0.2-py3-none-any.whl
+pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.2/KNN_CUDA-0.2-py3-none-any.whl # 该库提供KNN函数
 ```
 
 ## 2.Datasets
